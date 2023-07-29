@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\remoteServer\RemoteServer\RemoteServer.csproj" />
+    </ItemGroup>
+
 </Project>

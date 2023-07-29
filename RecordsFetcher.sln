@@ -1,8 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0510B784-9C91-4928-BD86-0D4297E3D322}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "remoteServer", "remoteServer", "{B72D8A3D-D92D-49D3-B366-7F9771BA1E60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoteServer", "remoteServer\RemoteServer\RemoteServer.csproj", "{2FC4EE11-C5FA-411F-9AA7-94B767422E7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordsFetcher.Application", "src\RecordsFetcher.Application\RecordsFetcher.Application.csproj", "{BFF20AE0-7CF3-415C-BD7C-25D082F0DAE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2FC4EE11-C5FA-411F-9AA7-94B767422E7C} = {B72D8A3D-D92D-49D3-B366-7F9771BA1E60}
+		{BFF20AE0-7CF3-415C-BD7C-25D082F0DAE4} = {0510B784-9C91-4928-BD86-0D4297E3D322}
 	EndGlobalSection
 EndGlobal

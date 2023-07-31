@@ -1,4 +1,6 @@
-﻿using RemoteServer.Models;
+﻿using System.Collections.Generic;
+using System.Linq;
+using RemoteServer.Models;
 
 namespace RecordsFetcher.Application.CachingService;
 
@@ -23,7 +25,8 @@ public class InMemoryCachingService : ICachingService
 
         if (endIndex >= memory.Count) return null;
 
-        var recordsInRange = memory.Values.Skip(startIndex).Take(resultsPerPage).ToArray();
+        var recordsInRange = memory.Values.Reverse()
+            .Skip(startIndex).Take(resultsPerPage).ToArray();
 
         return recordsInRange;
     }

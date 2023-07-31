@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordsFetcher.Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordsFetcher.Application.Test", "src\RecordsFetcher.Application.Test\RecordsFetcher.Application.Test.csproj", "{6489891B-70A8-438C-ACEE-D343AA4F252F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordsFetcher.Console", "src\RecordsFetcher.Console\RecordsFetcher.Console.csproj", "{1C437393-DE2A-404E-8140-992C838BA4D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,16 @@ Global
 		{2FC4EE11-C5FA-411F-9AA7-94B767422E7C} = {B72D8A3D-D92D-49D3-B366-7F9771BA1E60}
 		{BFF20AE0-7CF3-415C-BD7C-25D082F0DAE4} = {0510B784-9C91-4928-BD86-0D4297E3D322}
 		{6489891B-70A8-438C-ACEE-D343AA4F252F} = {0510B784-9C91-4928-BD86-0D4297E3D322}
+		{1C437393-DE2A-404E-8140-992C838BA4D5} = {0510B784-9C91-4928-BD86-0D4297E3D322}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6489891B-70A8-438C-ACEE-D343AA4F252F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6489891B-70A8-438C-ACEE-D343AA4F252F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6489891B-70A8-438C-ACEE-D343AA4F252F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6489891B-70A8-438C-ACEE-D343AA4F252F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C437393-DE2A-404E-8140-992C838BA4D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C437393-DE2A-404E-8140-992C838BA4D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C437393-DE2A-404E-8140-992C838BA4D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C437393-DE2A-404E-8140-992C838BA4D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

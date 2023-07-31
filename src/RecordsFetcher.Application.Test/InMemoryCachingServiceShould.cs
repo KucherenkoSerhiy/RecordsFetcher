@@ -38,7 +38,7 @@ public class InMemoryCachingServiceShould
         var pageNumber = 2;
         var resultsPerPage = 2;
 
-        var records = inMemoryCachingService.GetRecords(pageNumber, resultsPerPage);
+        var records = inMemoryCachingService.GetRecords(pageNumber, resultsPerPage)!;
         records.Length.Should().Be(resultsPerPage);
         records[0].Should().BeEquivalentTo(dataRecords[(pageNumber - 1) * resultsPerPage]);
     }
@@ -66,8 +66,7 @@ public class InMemoryCachingServiceShould
         };
 
         inMemoryCachingService.StoreRecords(duplicateRecords);
-        var count = inMemoryCachingService.Count();
-        count.Should().Be(1);
+        inMemoryCachingService.Count().Should().Be(1);
     }
     
     private static ServerDateTime CreateServerDateTime(int milliseconds)

@@ -10,7 +10,7 @@ public class InMemoryCachingService : ICachingService
     {
         foreach (var dataRecord in dataRecords)
         {
-            var creationDate = dataRecord.CreationDate.dateTime.Ticks;
+            var creationDate = dataRecord.CreationDate.DateTime.Ticks;
             if (!memory.ContainsKey(creationDate))
                 memory.Add(creationDate, dataRecord);
         }
